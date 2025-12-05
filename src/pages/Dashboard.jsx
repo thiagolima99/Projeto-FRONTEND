@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Dashboard() {
+  
+  const [produtos, setProdutos] = useState([]);
+
+ 
+  function handleAddProduct() {
+    const nome = prompt("Digite o nome do produto:");
+
+    if (!nome || nome.trim() === "") return;
+
+    setProdutos((prev) => [...prev, nome.trim()]);
+
+    alert("Produto adicionado!");
+  }
+
   return (
-     <section id="estoque" tabIndex="-1">
+    <section id="estoque" tabIndex="-1">
       <h2 className="title-highlight">Estoque</h2>
       <p className="intro-text">
         Acompanhe o estoque, vendas e pontos de atenção em tempo real.
@@ -12,7 +26,7 @@ export default function Dashboard() {
       <section aria-label="Indicadores principais" className="dashboard-grid">
         <div className="dash-card">
           <h4>Produtos em Estoque</h4>
-          <p>6 itens</p>
+          <p>06 itens</p>
         </div>
 
         <div className="dash-card">
@@ -22,7 +36,7 @@ export default function Dashboard() {
 
         <div className="dash-card">
           <h4>Produtos com Baixo Estoque</h4>
-          <p>2 itens</p>
+          <p>02 itens</p>
         </div>
       </section>
 
@@ -31,9 +45,8 @@ export default function Dashboard() {
         <h3 className="section-title">Ações Rápidas</h3>
 
         <div className="quick-buttons">
-          <button>Adicionar Produto</button>
+          <button onClick={handleAddProduct}>Adicionar Produto</button>
           <button>Atualizar Estoque</button>
-          <button>Criar Promoção</button>
         </div>
       </section>
 
@@ -42,9 +55,13 @@ export default function Dashboard() {
         <h3 className="section-title">Alertas</h3>
 
         <ul>
-          <li> 3 produtos estão prestes a esgotar ( Café Torrado 250g, Arroz Integral 5kg, Açúcar Cristal 1kg )</li>
-          <li> Há pedidos pendentes de confirmação.</li>
-          <li> Nova remessa chega amanhã.</li>
+          {/* Lista todos os produtos adicionados */}
+          {produtos.map((p, i) => (
+            <li key={i}>{p}</li>
+          ))}
+
+          <li>Há pedidos pendentes de confirmação.</li>
+          <li>Nova remessa chega amanhã.</li>
         </ul>
       </section>
     </section>

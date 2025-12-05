@@ -13,9 +13,7 @@ body {
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* ===============================
-   VARIÁVEIS — DARK MODE (padrão)
-================================= */
+
 :root {
   --bg: #0f0f10;
   --text: #e7e7e7;
@@ -26,9 +24,7 @@ body {
   --radius: 12px;
 }
 
-/* ===============================
-   LIGHT MODE
-================================= */
+
 .light-mode {
   --bg: #f2f2f2;
   --text: #222;
@@ -38,9 +34,7 @@ body {
   --primary-light: #3a9bff;
 }
 
-/* ===============================
-   BASE COLOR
-================================= */
+
 body {
   background: var(--bg);
   color: var(--text);
