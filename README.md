@@ -7,6 +7,7 @@ Abra o terminal na pasta raiz do projeto e execute o comando para instalar todos
 npm install
 
 Após instalar as depenências, execute o comando abaixo no terminal:
+
 npm run dev
 
 O projeto será iniciado e ficará acessível no seu navegador (o endereço exato será mostrado no terminal).
