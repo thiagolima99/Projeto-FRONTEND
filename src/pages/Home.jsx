@@ -34,11 +34,11 @@ export default function Home() {
 
     <button
       type="button"
-      aria-label="Consultar Estoque"
-      onClick={() => handleClick("Consultar Estoque")}
+      aria-label="Ver Produtos"
+      onClick={() => handleClick("Ver Produtos")}
       const onClick={irParaProdutos}
     >
-      Consultar Estoque
+      Ver Produtos
     </button>
   </div>
 </section>

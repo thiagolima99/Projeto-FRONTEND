@@ -2,9 +2,7 @@ import React, { useState } from "react";
 
 export default function Calendar() {
   const [eventos, setEventos] = useState([
-    { data: "2025-12-01", titulo: "Evento A" },
-    { data: "2025-12-05", titulo: "Evento B" },
-    { data: "2025-12-10", titulo: "Evento C" }
+    
   ]);
 
   const [titulo, setTitulo] = useState("");

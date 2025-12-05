@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 export default function Perfil() {
-  const [nome, setNome] = useState("Admin");
-  const [email] = useState("email@exemplo.com");
+  const [nome, setNome] = useState("Administrador");
+  const [email] = useState("teste@exemplo.com");
   const [editando, setEditando] = useState(false);
   const [novoNome, setNovoNome] = useState(nome);
 
