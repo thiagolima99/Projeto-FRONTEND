@@ -12,7 +12,7 @@ export default function Produtos() {
   <h2 className="title-highlight">Nossos Produtos</h2>
 
   <p className="intro-text">
-    Confira nossa seleção de materiais profissionais. Qualidade, resistência e o melhor custo-benefício para sua obra e manutenção.
+    Confira nossa seleção de alimentos
   </p>
 
   <ul className="product-grid">
@@ -23,10 +23,6 @@ export default function Produtos() {
           <p className="product-desc">{prod.descricao}</p>
 
           <div className="product-actions">
-            <button type="button" onClick={() => verProduto(prod.nome)}>
-              Ver Detalhes
-            </button>
-
             <button type="button" onClick={() => adicionarProduto(prod.nome)}>
               Adicionar ao Carrinho
             </button>

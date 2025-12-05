@@ -1,13 +1,20 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+  const navigate = useNavigate();
+
   const handleClick = (text) => {
     alert(`Você clicou em: ${text}`);
   };
 
+  const irParaProdutos = () => {
+    navigate("/produtos");
+  };
+
   return (
   <section id="home" tabIndex="-1">
-  <h2 className="title-highlight">MERCADO 4 IRMÕES</h2>
+  <h2 className="title-highlight">MERCADO DO BACANA</h2>
 
   <p className="intro-text">
     Bem-vindo ao nosso mercado! Aqui você encontra variedade, preço justo e produtos de qualidade.
@@ -23,20 +30,15 @@ export default function Home() {
   </div>
 
   <div className="action-area">
-    <button
-      type="button"
-      aria-label="Ação 1"
-      onClick={() => handleClick("Ação 1")}
-    >
-      Ação 1
-    </button>
+    
 
     <button
       type="button"
-      aria-label="Ação 2"
-      onClick={() => handleClick("Ação 2")}
+      aria-label="Consultar Estoque"
+      onClick={() => handleClick("Consultar Estoque")}
+      const onClick={irParaProdutos}
     >
-      Ação 2
+      Consultar Estoque
     </button>
   </div>
 </section>

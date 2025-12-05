@@ -27,15 +27,15 @@ export default function App() {
   return (
     <BrowserRouter>
       <header>
-        <h1>Mercado dos 4 Irmões</h1>
+        <h1>Mercado do Bacana</h1>
 
-        {/* BOTÃO DE TEMA
+        
         <button
           className="theme-btn"
           onClick={() => setTema(tema === "dark" ? "light" : "dark")}
         >
-          {tema === "dark" ? "Light Mode" : "Dark Mode"}
-        </button>*/}
+          {tema === "dark" ? "Modo Claro" : "Modo Escuro"}
+        </button>/
 
         <nav>
           <ul>
@@ -43,8 +43,8 @@ export default function App() {
             <li><Link to="/sobre">Sobre</Link></li>
             <li><Link to="/produtos">Produtos</Link></li>
             <li><Link to="/contato">Contato</Link></li>
-            <li><Link to="/dashboard">Dashboard</Link></li>
-            <li><Link to="/calendar">Calendar</Link></li>
+            <li><Link to="/dashboard">Estoque</Link></li>
+            <li><Link to="/calendar">Calendario</Link></li>
             <li><Link to="/perfil">Perfil</Link></li>
           </ul>
         </nav>
@@ -63,7 +63,7 @@ export default function App() {
       </main>
 
       <footer>
-        <p>Mercado 4 Irmões</p>
+        <p>MERCADO DO BACANA</p>
       </footer>
     </BrowserRouter>
   );

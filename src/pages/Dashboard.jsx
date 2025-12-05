@@ -2,17 +2,17 @@ import React from "react";
 
 export default function Dashboard() {
   return (
-     <section id="dashboard" tabIndex="-1">
-      <h2 className="title-highlight">Painel Inteligente</h2>
+     <section id="estoque" tabIndex="-1">
+      <h2 className="title-highlight">Estoque</h2>
       <p className="intro-text">
-        Acompanhe o desempenho da loja, estoque, vendas e pontos de atenção em tempo real.
+        Acompanhe o estoque, vendas e pontos de atenção em tempo real.
       </p>
 
       {/* SEÇÃO: INDICADORES PRINCIPAIS */}
       <section aria-label="Indicadores principais" className="dashboard-grid">
         <div className="dash-card">
           <h4>Produtos em Estoque</h4>
-          <p>128 itens</p>
+          <p>6 itens</p>
         </div>
 
         <div className="dash-card">
@@ -22,7 +22,7 @@ export default function Dashboard() {
 
         <div className="dash-card">
           <h4>Produtos com Baixo Estoque</h4>
-          <p>7 itens</p>
+          <p>2 itens</p>
         </div>
       </section>
 
@@ -42,9 +42,9 @@ export default function Dashboard() {
         <h3 className="section-title">Alertas</h3>
 
         <ul>
-          <li>🔥 3 produtos estão prestes a esgotar.</li>
-          <li>⚠️ Há pedidos pendentes de confirmação.</li>
-          <li>📦 Nova remessa chega amanhã.</li>
+          <li> 3 produtos estão prestes a esgotar ( Café Torrado 250g, Arroz Integral 5kg, Açúcar Cristal 1kg )</li>
+          <li> Há pedidos pendentes de confirmação.</li>
+          <li> Nova remessa chega amanhã.</li>
         </ul>
       </section>
     </section>
